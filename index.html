@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sangjun Park</title>
+    <meta
+      name="description"
+      content="Personal academic website with publications, research interests, portfolio work, and contact information."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="profile" aria-label="Profile">
+        <div class="photo-frame">
+          <img
+            id="profile-photo"
+            src="./assets/images/sangjunpark.jpg"
+            alt="Portrait of Sangjun Park"
+          >
+          <span class="photo-fallback">photo.jpg</span>
+        </div>
+
+        <div class="profile-copy">
+          <h1>Sangjun Park</h1>
+
+          <p>
+            I am a third-year undergraduate at the University of Massachusetts Amherst. My research interests are robot learning and control. I currently work at the Physical and Interactive Intelligence Labatory (SNU PI Lab) at Seoul National University with Professor Youngjae Yu.
+          </p>
+
+          <p>
+            Previously, I worked in the Dynamic and Autonomous Robotic Systems Labatory (DARoS Lab) at UMass Amherst with Professor Donghyun Kim.
+          </p>
+
+          <div class="profile-meta">
+            <dl class="details">
+              <div>
+                <dt>Email:</dt>
+                <dd><a href="mailto:sangjunpark@umass.edu">sangjunpark@umass.edu</a></dd>
+              </div>
+              <div>
+                <dt>Links:</dt>
+                <dd>
+                  <a href="https://scholar.google.com/citations?hl=en&user=PJPb0m0AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> |
+                  <a href="https://github.com/ssangjunpark" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <!-- | <a href="#">CV</a> -->
+                </dd>
+              </div>
+            </dl>
+
+          </div>
+        </div>
+      </header>
+
+      <div class="content" aria-label="Site content">
+        <section class="content-section" aria-labelledby="publications-title">
+          <header class="content-header publications-header">
+            <h2 id="publications-title">Publications</h2>
+            <p class="featured-legend">
+              <span class="featured-swatch" aria-hidden="true"></span>
+              Representative paper
+            </p>
+          </header>
+
+          <div id="publications" class="publication-list"></div>
+        </section>
+
+        <!-- <section class="content-section" aria-labelledby="misc-title">
+          <header class="content-header">
+            <h2 id="misc-title">Misc</h2>
+          </header>
+
+          <div id="misc" class="misc-list"></div>
+        </section> -->
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
