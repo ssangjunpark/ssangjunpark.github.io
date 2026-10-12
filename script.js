@@ -9,9 +9,9 @@ const publications = [
     year: "2026",
     venueNote: "130/338 ≈ 38.5% acceptance rate",
     links: [
-      { label: "paper", url: "#" },
-      { label: "code", url: "#" },
-      { label: "video", url: "#" },
+      { label: "paper (coming soon)" },
+      { label: "code (coming soon)" },
+      { label: "video", url: "https://www.youtube.com/watch?v=0G6ZX96y1DM" },
     ],
     contributionNote: "* indicates equal contribution.",
     media: {
@@ -69,13 +69,15 @@ function createLinksElement(links, className) {
   linksElement.className = className;
 
   links.forEach((link, index) => {
-    const anchor = document.createElement("a");
-    anchor.href = link.url;
-    anchor.target = "_blank";
-    anchor.rel = "noopener noreferrer";
-    anchor.textContent = link.label;
+    const element = document.createElement(link.url ? "a" : "span");
+    if (link.url) {
+      element.href = link.url;
+      element.target = "_blank";
+      element.rel = "noopener noreferrer";
+    }
+    element.textContent = link.label;
 
-    linksElement.appendChild(anchor);
+    linksElement.appendChild(element);
     if (index < links.length - 1) {
       linksElement.appendChild(document.createTextNode(" | "));
     }
