@@ -1,0 +1,17 @@
+benchmark,method,configuration,value,unit,frames_processed,conditions
+lafan1_throughput,FRDV,20 CPU workers without boundary refinement,9156,FPS,,77 LAFAN1 sequences; Unitree G1; kinematic retargeting only
+lafan1_throughput,FRDV,20 CPU workers with boundary refinement,1947,FPS,,77 LAFAN1 sequences; Unitree G1; kinematic retargeting only
+lafan1_throughput,FRDV,1 CPU worker,677,FPS,,77 LAFAN1 sequences; Unitree G1; kinematic retargeting only
+lafan1_throughput,ProtoMotions,PyRoki GPU,67,FPS,,77 LAFAN1 sequences; Unitree G1
+lafan1_throughput,GMR,CPU,48,FPS,,77 LAFAN1 sequences; Unitree G1
+amass_runtime,FRDV,20 CPU workers without boundary refinement,1.08,hours,19696008,13662 clips; kinematic retargeting only
+amass_runtime,FRDV,1 CPU worker,7.43,hours,19696008,13662 clips; kinematic retargeting only
+amass_runtime,ProtoMotions,PyRoki GPU,45.06,hours,6147900,13662 clips; each clip trimmed or padded to 450 frames
+rl_global_position_error,FRDV,Single-worker kinematic references,156.4916,mm,,Mean global per-body position error; pooled frames/trials/motions; 4096 trials per motion
+rl_global_position_error,GMR,Kinematic references,237.1999,mm,,Mean global per-body position error; pooled frames/trials/motions; 4096 trials per motion
+rl_global_position_error,ProtoMotions,Kinematic references,289.9490,mm,,Mean global per-body position error; pooled frames/trials/motions; 4096 trials per motion
+
+dance1_dynamics_global_position_error,IK only,Kinematic reference,103.1215,mm,,Mean; first 26 seconds of Dance1-S1
+dance1_dynamics_global_position_error,CI-iLQR,Corrected reference,86.5751,mm,,Mean; first 26 seconds of Dance1-S1
+dance1_dynamics_anchor_position_error,IK only,Kinematic reference,29.2581,mm,,Mean; first 26 seconds of Dance1-S1
+dance1_dynamics_anchor_position_error,CI-iLQR,Corrected reference,30.5669,mm,,Mean; first 26 seconds of Dance1-S1

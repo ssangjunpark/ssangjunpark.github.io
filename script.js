@@ -9,6 +9,7 @@ const publications = [
     year: "2026",
     venueNote: "130/338 ≈ 38.5% acceptance rate",
     links: [
+      { label: "project page", url: "/frdv/" },
       { label: "paper (coming soon)" },
       { label: "code (coming soon)" },
       { label: "video", url: "https://www.youtube.com/watch?v=0G6ZX96y1DM" },
