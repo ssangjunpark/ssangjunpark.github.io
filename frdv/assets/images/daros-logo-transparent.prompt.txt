@@ -1,9 +1,0 @@
-Mode: built-in imagegen edit, transparent_background=true
-Source: daros-logo.png
-
-Use case: background-extraction.
-Asset type: transparent PNG of an existing academic laboratory logo for a website footer.
-Input image 1 is the exact EDIT TARGET, not a style reference.
-Primary request: Remove the entire white / pale off-white background and replace it with genuine alpha transparency. Keep only the existing black and vivid red DARoS lettering and black line-art running humanoid. Also make the white negative spaces within letters and within the robot drawing transparent.
-Text (verbatim): DARoS (preserve the exact existing stylized letterforms, capitalization, spacing, and arrangement).
-Constraints: Preserve all foreground shapes, strokes, positions, black/red colors, and sharp antialiased edges exactly. Do not redraw, redesign, add, remove, reinterpret, or alter the logo. Preserve its original wide canvas aspect ratio of 484:217 and original composition, without added margins or cropping any foreground. Output PNG with a real transparent background, no white matte, no checkerboard drawn into the image, no shadows, no glow.
